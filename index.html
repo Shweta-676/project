@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Explorer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('https://wallpaperaccess.com/full/1267580.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 30px;
+            background: #111;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background: linear-gradient(90deg, #000428, #004e92);
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        /* Slideshow styling */
+.slideshow {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite linear; /* Looping animation */
+    transition-delay: 0s;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Keyframes for smooth sliding animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); } /* Loop back to start */
+}
+
+        /* AI, Biotech, Renewable Energy Styling */
+#ai, #biotech, #renewable {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.3);
+    max-width: 80%;
+}
+
+#ai h2, #biotech h2, #renewable h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #00e6e6;
+}
+
+iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
+
+        @keyframes slide {
+            0%, 100% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+        }
+        section {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 20px;
+            border-radius: 8px;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .faq, .discussion {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Science Explorer - Dive into the World of Discovery</header>
+    
+    <nav>
+        <ul>
+            <li><a href="#quantum">Quantum Computing</a></li>
+            <li><a href="#space">Space Exploration</a></li>
+            <li><a href="#ai">Artificial Intelligence</a></li>
+            <li><a href="#biotech">Biotechnology</a></li>
+            <li><a href="#renewable">Renewable Energy</a></li>
+        </ul>
+    </nav>
+    
+    <div class="slideshow">
+        <div class="slides">
+            <img src="https://www.zdnet.com/a/img/resize/e7ef330413db2d08de496e5a5ae362ce9e76c065/2020/10/26/8d555a8e-93f7-4d63-bd13-e40696bdc433/quantum-computing.jpg?auto=webp&width=1280" alt="Quantum Computing">
+            <img src="https://images.stockcake.com/public/5/b/4/5b4cd6df-8dba-4cce-8423-ecc65bf48c8b_large/astronaut-floats-freely-stockcake.jpg" alt="Space Exploration">
+            <img src="https://cdn.prod.website-files.com/64ccd6239abfeec743815b28/662f58e1e6dd5be58d583ec3_AI-data-visualization%20(1).webp" alt="Artificial Intelligence">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSar41BhZGrjRRaGpUcQMK4Nh0B0TWAmuMiYw&s" alt="AI">
+        </div>
+    </div>
+    
+    <section id="quantum">
+        <h2>Quantum Computing</h2>
+        <p>Explore the futuristic field of computing beyond classical limits.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EfPSYq9Qxbs" frameborder="0" allowfullscreen></iframe>
+        <br><br>
+        <a href="quantum.html" style="font-size: 20px; color: #004e92;"> LEARN MORE...</a>
+    </section>
+    
+    <section id="space">
+        <h2>Space Exploration</h2>
+        <p>Learn about new frontiers in space travel and research.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rrf8zhxd2rY" frameborder="0" allowfullscreen></iframe>
+        <br><br>
+        <a href="space.html" style="font-size: 20px; color: #004e92;"> LEARN MORE...</a>
+    </section>
+
+    <section id="ai">
+        <h2>Artificial Intelligence</h2>
+        <p>AI is revolutionizing the world, from deep learning to automation.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2ePf9rue1Ao" 
+            title="Artificial Intelligence Video" frameborder="0" allowfullscreen>
+        </iframe>
+        <br><br>
+        <a href="ai.html" style="font-size: 20px; color: #004e92;"> LEARN MORE...</a>
+    </section>
+    
+    <section id="biotech">
+        <h2>Biotechnology</h2>
+        <p>Discover how biotech is improving medicine, agriculture, and genetics.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rr12rWVRUAg?si=ggPi_piJMXiGiIlX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br>
+        <a href="biotech.html" style="font-size: 20px; color: #004e92;"> LEARN MORE...</a>
+    </section>
+    
+    <section id="renewable">
+        <h2>Renewable Energy</h2>
+        <p>Exploring sustainable solutions like solar, wind, and hydro energy.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1kUE0BZtTRc?si=x4MIHSFYLLzy31Ez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br>
+        <a href="renewable.html" style="font-size: 20px; color: #004e92;"> LEARN MORE...</a>
+    </section>
+    
+    
+    <section class="faq">
+        <h3>FAQs</h3>
+        <p><b>Q:</b> What is quantum computing?</p>
+        <p><b>A:</b> Quantum computing uses quantum mechanics to process information at unprecedented speeds.</p>
+        <p><b>Q:</b> What are the latest space discoveries?</p>
+        <p><b>A:</b> Scientists are exploring exoplanets and black holes using advanced telescopes.</p>
+    </section>
+    
+    <section class="discussion">
+        <h3>Student Discussion</h3>
+        <p>Engage in discussions and share insights on scientific advancements.</p>
+        <div class="discussion-post">
+            <p><b>Student 1:</b> "Quantum Computing is going to change the way we approach data security. Imagine encryption that can't be cracked by classical computers!"</p>
+            <p><b>Student 2:</b> "Absolutely! It could be the breakthrough in solving some of the toughest computational problems, like protein folding in AI. It’s so exciting!"</p>
+        </div>
+        <div class="discussion-post">
+            <p><b>Student 3:</b> "Space exploration is incredible, especially the recent findings about black holes. I think we are just scratching the surface of what's out there!"</p>
+            <p><b>Student 4:</b> "I agree, the new telescopes have opened up so many possibilities. Have you guys read about the James Webb Space Telescope’s recent discoveries?"</p>
+        </div>
+        <div class="discussion-post">
+            <p><b>Student 5:</b> "I think renewable energy will be the key to combating climate change. Solar power has become so affordable, and now wind energy is making huge strides." </p>
+            <p><b>Student 6:</b> "Exactly! With advancements in energy storage and distribution, we can expect more regions to adopt clean energy in the next decade." </p>
+        </div>
+    </section>
+    
+    
+    <footer>&copy; 2025 Science Explorer | Learn, Innovate, Explore</footer>
+</body>
+</html>
