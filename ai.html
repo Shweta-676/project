@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Webpage - The Future of Artificial Intelligence">
+    <title>AI - The Future of Technology</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background: url('ai-hero.jpg') no-repeat center center/cover;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.ai-info, .ai-facts, .video, .interactive {
+    padding: 2rem;
+    text-align: center;
+}
+
+.ai-info h2, .ai-facts h2, .video h2, .interactive h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ai-image img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.ai-facts ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding-left: 0;
+}
+
+.video-container {
+    margin: 20px auto;
+}
+
+.interactive-container {
+    margin-top: 30px;
+}
+
+.ai-animation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 200px;
+}
+
+.node {
+    width: 50px;
+    height: 50px;
+    background-color: #00d4ff;
+    border-radius: 50%;
+    animation: nodeAnimation 2s infinite alternate;
+}
+
+.node:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.node:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.link {
+    width: 3px;
+    height: 150px;
+    background-color: #fff;
+    opacity: 0.7;
+    animation: linkAnimation 2s infinite alternate;
+}
+
+.link:nth-child(4) {
+    animation-delay: 1s;
+}
+
+@keyframes nodeAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes linkAnimation {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.ask-doubt {
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            width: 80%;
+        }
+        .ask-doubt input, .ask-doubt textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#what-is-ai">About AI</a></li>
+                    <li><a href="#facts"> Facts</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>The Future of Artificial Intelligence</h1>
+            <p>Explore the innovations, applications, and breakthroughs in AI technology.</p>
+        </div>
+    </section>
+    
+    <section class="ai-info" id="what-is-ai">
+        <h2>What is AI?</h2>
+        <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think, learn, and solve problems. It has the potential to revolutionize various industries, from healthcare to entertainment.</p>
+        <div class="ai-image">
+            <img src="https://t4.ftcdn.net/jpg/05/62/11/61/360_F_562116144_lxZOlafYtRtv8BzmKTKGcNby0D37ZVTZ.jpg" alt="AI Brain Image" />
+        </div>
+    </section>
+    
+    <section class="ai-facts" id="facts">
+        <h2>Key Facts</h2>
+        <ul>
+            <li>AI can process data and make decisions faster than humans.</li>
+            <li>AI is used in autonomous vehicles, personal assistants, and customer service bots.</li>
+            <li>Machine Learning is a subset of AI that focuses on the idea that systems can learn from data and improve over time.</li>
+            <li>AI is expected to contribute $15.7 trillion to the global economy by 2030.</li>
+        </ul>
+    </section>
+    
+    <section class="video">
+        <h2>Watch How AI is Changing the World</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2ePf9rue1Ao" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section class="interactive">
+        <h2>AI Neural Network Animation</h2>
+        <div class="interactive-container">
+            <div class="ai-animation">
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="link"></div>
+                <div class="node"></div>
+                <div class="link"></div>
+            </div>
+        </div>
+
+        <div class="ask-doubt" id="faq">
+            <h3>Ask Your Doubts! 🛰️</h3>
+            <p>Curious about AI-alogrithms and applications? Type your question below!</p>
+            <input type="text" placeholder="Enter your name">
+            <textarea placeholder="Ask your space question..."></textarea>
+            <a href="thanks.html">
+                <input type="submit" value="submit">
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 AI Innovations. All rights reserved.</p>
+    </footer>
+</body>
+</html>

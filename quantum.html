@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: url('https://source.unsplash.com/1600x900/?galaxy,tech') no-repeat center center/cover; color: white; text-align: center; }
+        header { padding: 30px; background: rgba(0,0,0,0.8); font-size: 24px; font-weight: bold; }
+        .container { padding: 20px; max-width: 900px; margin: auto; }
+        .learn-more { background: #00e6e6; color: black; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; margin-top: 20px; }
+        .learn-more:hover { background: #009999; }
+        .hidden { display: none; background: rgba(0,0,0,0.7); padding: 20px; border-radius: 8px; margin-top: 20px; }
+        iframe { width: 100%; height: 315px; border-radius: 10px; margin-top: 15px; }
+        .fact { background: rgba(255,255,255,0.2); padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .ask-doubt {
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            width: 80%;
+        }
+        .ask-doubt input, .ask-doubt textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Quantum Computing - The Future of Technology</header>
+    
+    <div class="container">
+        <p>Quantum computers can solve problems beyond the reach of classical computers. Learn about the science behind it.</p>
+        <button class="learn-more" onclick="toggleInfo()">Learn More</button>
+        
+        <div id="more-info" class="hidden">
+            <h2>Quantum Computing Explained</h2>
+            <p>Quantum computers use qubits, which can be in multiple states at once, enabling faster problem-solving.</p>
+            
+            <h3>Interesting Facts</h3>
+            <div class="fact">🌌 Quantum computers perform calculations in parallel, unlike classical ones.</div>
+            <div class="fact">⚛️ Qubits rely on superposition and entanglement for processing.</div>
+            <div class="fact">🚀 Google’s Sycamore quantum processor solved a problem in 200 seconds that would take 10,000 years on a supercomputer.</div>
+            
+            <h3>Must-Watch Videos</h3>
+            <p>🔹 <b>What is Quantum Computing?</b></p>
+            <iframe src="https://www.youtube.com/embed/2s3aJfRr9gE" title="Quantum Computing Explained"></iframe>
+            
+            <p>🔹 <b>How Quantum Computers Work</b></p>
+            <iframe src="https://www.youtube.com/embed/OWJCfOvochA" title="How Quantum Computers Work"></iframe>
+            
+            <h3>Common Questions</h3>
+            <p><b>Q:</b> How is quantum computing different from classical computing?</p>
+            <p><b>A:</b> Classical computers use bits (0s and 1s), while quantum computers use qubits, which can be both 0 and 1 simultaneously.</p>
+            
+            <p><b>Q:</b> What industries benefit from quantum computing?</p>
+            <p><b>A:</b> Cryptography, drug discovery, finance, and artificial intelligence.</p>
+        </div>
+
+        <div class="ask-doubt">
+            <h3>Ask Your Doubts! 🛰️</h3>
+            <p>Curious about black holes or Mars? Type your question below!</p>
+            <input type="text" placeholder="Enter your name">
+            <textarea placeholder="Ask your space question..."></textarea>
+            <a href="thanks.html">
+                <input type="submit" value="submit">
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleInfo() {
+            let info = document.getElementById("more-info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

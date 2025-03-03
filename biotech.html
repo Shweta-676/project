@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biotech Webpage - The Future of Biotechnology">
+    <title>Biotech - The Future of Biotechnology</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #eaf0f1;
+    color: #333;
+}
+
+header {
+    background-color: #00695c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background: url('https://www.park.edu/wp-content/uploads/2024/03/Park-University-biotechnology-Blog-Banner.jpg') no-repeat center center/cover;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.biotech-info, .biotech-facts, .video, .interactive {
+    padding: 2rem;
+    text-align: center;
+}
+
+.biotech-info h2, .biotech-facts h2, .video h2, .interactive h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.biotech-image img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.biotech-facts ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding-left: 0;
+}
+
+.video-container {
+    margin: 20px auto;
+}
+
+.interactive-container {
+    margin-top: 30px;
+}
+
+.biotech-animation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 200px;
+}
+
+.gene {
+    width: 60px;
+    height: 60px;
+    background-color: #00bfae;
+    border-radius: 50%;
+    animation: geneAnimation 2s infinite alternate;
+}
+
+.enzyme {
+    width: 80px;
+    height: 80px;
+    background-color: #00b3b3;
+    border-radius: 50%;
+    animation: enzymeAnimation 2s infinite alternate;
+}
+
+.link {
+    width: 3px;
+    height: 150px;
+    background-color: #00695c;
+    opacity: 0.7;
+    animation: linkAnimation 2s infinite alternate;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #00796b;
+    border-radius: 50%;
+    animation: cellAnimation 2s infinite alternate;
+}
+
+@keyframes geneAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes enzymeAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes linkAnimation {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cellAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+footer {
+    background-color: #00695c;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.ask-doubt {
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            width: 80%;
+        }
+        .ask-doubt input, .ask-doubt textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#what-is-biotech">About Biotech</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>The Future of Biotechnology</h1>
+            <p>Discover the power of biology and technology working together to solve critical challenges.</p>
+        </div>
+    </section>
+    
+    <section class="biotech-info" id="what-is-biotech">
+        <h2>What is Biotech?</h2>
+        <p>Biotechnology is the use of living organisms, cells, and biological systems to create new products and technologies that improve human lives. It spans areas like genetic engineering, bioinformatics, and environmental sustainability.</p>
+        <div class="biotech-image">
+            <img src="https://fluidhandlingpro.com/wp-content/uploads/2023/08/Biotechnology-market-fluid-handling-pro-innovations-news.jpg" alt="Biotech Laboratory" />
+        </div>
+    </section>
+    
+    <section class="biotech-facts">
+        <h2>Key Facts</h2>
+        <ul>
+            <li>Biotech is crucial for advancements in medicine, such as gene therapy and cancer treatment.</li>
+            <li>Biotechnology is used to develop sustainable agriculture solutions and renewable energy sources.</li>
+            <li>CRISPR gene editing is one of the most revolutionary tools in modern biotech.</li>
+            <li>By 2025, global biotech market revenues are projected to exceed $800 billion.</li>
+        </ul>
+    </section>
+    
+    <section class="video">
+        <h2>Watch How Biotech is Transforming Healthcare</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rr12rWVRUAg?si=ggPi_piJMXiGiIlX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    
+    <section class="interactive">
+        <h2>Biotech Animation</h2>
+        <div class="interactive-container">
+            <div class="biotech-animation">
+                <div class="gene"></div>
+                <div class="enzyme"></div>
+                <div class="gene"></div>
+                <div class="link"></div>
+                <div class="cell"></div>
+                <div class="link"></div>
+            </div>
+        </div>
+
+        <div class="ask-doubt" id="faq">
+            <h3>Ask Your Doubts! </h3>
+            <p>Curious about black holes or Mars? Type your question below!</p>
+            <input type="text" placeholder="Enter your name">
+            <textarea placeholder="Ask your Biotech question..."></textarea>
+            <a href="thanks.html">
+                <input type="submit" value="submit">
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Biotech Innovations. All rights reserved.</p>
+    </footer>
+</body>
+</html>

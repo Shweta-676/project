@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renewable Energy - The Future of Sustainable Power">
+    <title>Renewable Energy - Powering the Future</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+header {
+    background-color: #00796b;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background: url('https://cdn.britannica.com/10/222610-138-F0268996/britannica-insights-Phil-the-Fixer-renewable-energy.jpg?w=800&h=450&c=crop') no-repeat center center/cover;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.renewable-energy-info, .renewable-energy-facts, .video, .interactive {
+    padding: 2rem;
+    text-align: center;
+}
+
+.renewable-energy-info h2, .renewable-energy-facts h2, .video h2, .interactive h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.renewable-energy-image img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.renewable-energy-facts ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding-left: 0;
+}
+
+.video-container {
+    margin: 20px auto;
+}
+
+.interactive-container {
+    margin-top: 30px;
+}
+
+.energy-animation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 200px;
+}
+
+.wind-turbine {
+    width: 70px;
+    height: 150px;
+    background-color: #009688;
+    border-radius: 10px;
+    animation: turbineAnimation 3s infinite alternate;
+}
+
+.solar-panel {
+    width: 100px;
+    height: 100px;
+    background-color: #ffeb3b;
+    border-radius: 10px;
+    animation: solarPanelAnimation 3s infinite alternate;
+}
+
+.battery {
+    width: 80px;
+    height: 120px;
+    background-color: #cddc39;
+    border-radius: 20px;
+    animation: batteryAnimation 3s infinite alternate;
+}
+
+@keyframes turbineAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes solarPanelAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes batteryAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+footer {
+    background-color: #00796b;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.ask-doubt {
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            width: 80%;
+        }
+        .ask-doubt input, .ask-doubt textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#what-is-renewable-energy">About Renewable Energy</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Powering the Future with Renewable Energy</h1>
+            <p>Explore sustainable energy solutions that are transforming the world and the way we power our lives.</p>
+        </div>
+    </section>
+    
+    <section class="renewable-energy-info" id="what-is-renewable-energy">
+        <h2>What is Renewable Energy?</h2>
+        <p>Renewable energy comes from natural resources like sunlight, wind, and geothermal heat. These sources are replenished naturally and are an essential part of reducing carbon emissions and combating climate change.</p>
+        <div class="renewable-energy-image">
+            <img src="https://img.freepik.com/free-photo/sunset-sky-powers-wind-solar-energy-generated-by-ai_188544-26193.jpg" alt="Wind and Solar Energy" />
+        </div>
+    </section>
+    
+    <section class="renewable-energy-facts">
+        <h2>Key Facts</h2>
+        <ul>
+            <li>Solar energy could supply 10% of the world’s energy needs by 2050.</li>
+            <li>Wind power is one of the fastest-growing renewable energy sources globally.</li>
+            <li>Geothermal energy is a sustainable and reliable source of power, with minimal environmental impact.</li>
+            <li>In 2020, renewable energy sources accounted for about 29% of global electricity generation.</li>
+        </ul>
+    </section>
+    
+    <section class="video">
+        <h2>Watch How Renewable Energy is Transforming the World</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1kUE0BZtTRc?si=x4MIHSFYLLzy31Ez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section class="interactive">
+        <h2>Renewable Energy Animation</h2>
+        <div class="interactive-container">
+            <div class="energy-animation">
+                <div class="wind-turbine"></div>
+                <div class="solar-panel"></div>
+                <div class="battery"></div>
+                <div class="wind-turbine"></div>
+                <div class="solar-panel"></div>
+            </div>
+        </div>
+
+        <div class="ask-doubt" id="faq">
+            <h3>Ask Your Doubts! </h3>
+            <p>Curious about black holes or Mars? Type your question below!</p>
+            <input type="text" placeholder="Enter your name">
+            <textarea placeholder="Ask your Biotech question..."></textarea>
+            <a href="thanks.html">
+                <input type="submit" value="submit">
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Renewable Energy Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
